@@ -1,0 +1,17 @@
+{% extends 'test_app/base.html' %}
+{% block content %}
+
+  <div class="card">
+
+    <div class="card-content">
+      <div class="content">
+        <h2>You have been logged out!</h2>
+        <br>
+        <a class="button is-link" href="{% url 'login' %}">Login Again</a>
+      </div>
+    </div>
+
+  </div>
+        
+ 
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends 'test_app/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+  <div class="card">
+
+    <header class="card-header has-background-link">
+      <div class="card-header-title subtitle has-text-light is-size-3 has-text-weight-normal" 
+      style="justify-content: space-between">
+      Login
+      <a class="button is-light" href="{% url 'register' %}">Register</a>
+      </div>
+    </header>
+
+    <div class="card-content">
+      <div class="content">
+
+        <form method="POST">
+          {% csrf_token %} 
+          {{ form|crispy }}
+          <br>
+          <input type="submit" value ="Login"/> 
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+{% endblock content %}
