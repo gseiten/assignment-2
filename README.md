@@ -1,5 +1,6 @@
 # Assignment 2
 
+
 ## Run the following commands
 
 > pipenv install
@@ -15,3 +16,7 @@
 > python manage.py createsuperuser
 
 > python manage.py runserver
+
+
+
+## **Note: Use Python 3.8 or later**
