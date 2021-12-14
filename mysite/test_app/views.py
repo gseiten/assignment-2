@@ -7,7 +7,6 @@ from .forms import UserForm, UserUpdateForm, CompanyUpdateForm
 
 def login(request):
 
-    print("HIT")
     if request.user.is_authenticated:
         return redirect('home')
 
