@@ -1,0 +1,7 @@
+
+Key Pointers:
+
+1. Custom User model to replace username with email for authentication.
+2. One to one relationship between User and Company model.
+3. Separate templates for user details and company details to edit.
+4. UserEditForm and CompanyEditForm forms for editing users and respective company.
